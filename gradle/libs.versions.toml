@@ -1,0 +1,21 @@
+[versions]
+kotlin = "1.9.23"
+kotlin-coroutines = "1.8.0"
+aws-kotlin = "1.1.10"
+okio = "3.9.0"
+okhttp = "5.0.0-alpha.12"
+junit = "4.13.2"
+testcontainers = "1.19.7"
+
+[plugins]
+kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+
+[libraries]
+kotlinx-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "kotlin-coroutines" }
+kotlinx-coroutines-test = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-test", version.ref = "kotlin-coroutines" }
+aws-kotlin-sqs = { module = "aws.sdk.kotlin:sqs-jvm", version.ref = "aws-kotlin" }
+okio = { module = "com.squareup.okio:okio", version.ref = "okio" }
+okhttp = { module = "com.squareup.okhttp3:okhttp", version.ref = "okhttp" }
+
+junit = { module = "junit:junit", version.ref = "junit" }
+testcontainers-localstack = { module = "org.testcontainers:localstack", version.ref = "testcontainers" }
